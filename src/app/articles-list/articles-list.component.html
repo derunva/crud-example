@@ -1,0 +1,9 @@
+<p>
+  articles-list works!
+</p>
+<div *ngIf="articlesLoading" class="loading">
+  Loading ...
+</div>
+<div  *ngFor="let item of articles" class="article">
+  <div class="article__title">{{item.title}}</div>
+</div>
